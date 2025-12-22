@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .option-container {
+            margin-top: 30px;
+        }
+        .option {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px 40px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Hospital Portal</h1>
+    <div class="option-container">
+        <a href="/admit" class="option">Admit a Patient</a>
+        <a href="/appoint" class="option">Book Appointment with Doctor</a>
+    </div>
+</body>
+</html>

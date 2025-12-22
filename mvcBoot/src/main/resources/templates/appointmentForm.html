@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 520px;
+            margin: 48px auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+        h1 {
+            margin: 0 0 16px;
+            font-size: 22px;
+            text-align: center;
+            color: #222;
+        }
+        label {
+            display: block;
+            margin-top: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 6px;
+            border: 1px solid #cfd4dc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #0d6efd;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover { background: #0b5ed7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Appointment</h1>
+
+        <!-- The form STARTS here -->
+        <form action="appoint" method="post">
+            <label for="patientName">Patient Name</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="doctorName">Doctor Name</label>
+            <input type="text" id="doctorName" name="doctorName" required>
+
+            <label for="appointmentDate">Appointment Date</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Appointment Time</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <!-- The form ENDS here -->
+    </div>
+</body>
+</html>
