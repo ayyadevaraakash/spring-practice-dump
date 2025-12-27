@@ -9,7 +9,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private  String name;
+    private String name;
 
     @ManyToMany
     private List<Course> courses;
@@ -38,3 +38,4 @@ public class Student {
         this.name = name;
     }
 }
+
